@@ -5,3 +5,4 @@
 number = float(input("Enter a number:"))
 number +=1
 print('Your number plus one is', number)
+print('Your number plus one is {}'.format(number))
