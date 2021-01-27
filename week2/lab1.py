@@ -1,6 +1,7 @@
 # lab 2.1 intro to python statements
 # helen oshea 
 # 20210127
+# multiple questions and answers from lab 1
 #print("3\n", 2 2 + 4)
 print("1\n2 + 4=",  2 + 4)
 print("2\n2+4=",2+4)
