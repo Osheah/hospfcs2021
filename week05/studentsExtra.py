@@ -1,9 +1,10 @@
-# programme to input student details and view them
+# programme to input student details and view them 
+# this is a modification of students.py but using a dict for choices/options
 
 # helen o'shea
 # 20210218
 
-# function to show the menu
+# function to show the menu - same as students.py
 def showMenu():
   print("What would you like to do? \n\
   \t(a) Add new student\n\
@@ -12,7 +13,7 @@ def showMenu():
   option = input("Type one letter (a/v/q): ").strip() # takes input from user 
   return option
 
-# function to add student first name last name  and modules
+# function to add student first name last name  and modules - same as students.py
 def doAdd(students):
   myStudent = {} # initalise the dict
   myStudent['firstname'] = input("Enter your first name: ").strip()
@@ -22,7 +23,7 @@ def doAdd(students):
   #print(type(students))
   return students
 
-# function to add courses and grades
+# function to add courses and grades - same as students.py
 def readModules():
   myCourses = {'course':[], 'grade':[]} # initalise dict with empty list for values for courses and grades
   course = input("Enter the Module name:" ).strip() # get entry for module name
@@ -33,7 +34,7 @@ def readModules():
     course = input("Enter the Module name:" ).strip()     # ask for more input - if this is blank the function will return   
   return myCourses        
 
-# funtion to view the entries
+# funtion to view the entries - same as students.py
 def doView(students):
   print("\n") # leave a gap between this function call and the showMenu function
   if len(students)<1: # if this is true then there are no entries to show
@@ -49,16 +50,25 @@ def doView(students):
       print("Module: {} with Grade {:.0f}%".format  (coursesAndGrades['course'][i],   coursesAndGrades['grade'][i])) # display module name and grade for each student
     print("\n")  
   return students 
+
+# option for q
+def doNothing(dumby):
+  pass
+# option to call various functions depending on input
+choiceMap = {
+  'a': doAdd,
+  'v': doView,
+  'q': doNothing
+  
+}
 # this function is the main function that calls the other functions
 def main():
   students = [] # initalise student list
-  option = showMenu() # show the menu 
-  while(option != 'q'): # while q has not been selected function will exit if q selected
-    if option == 'a': # show option a
-      doAdd(students) # option a calls the function to add students
-    elif option == 'v': # show option v
-      doView(students) # option v calls the function to show students
-    elif option !='q': # catch for a non valid entry
+  option = showMenu() # show the menu and sets the option
+  while(option != 'q'): # while q has not been selected 
+    if option in choiceMap: # look at the choiceMap and select function based on input 
+      choiceMap[option](students)
+    else: # catch for a non valid entry
       print("\n\nplease select either a,v or q")
     option=showMenu() # show the menu again for more choices if q is not selected
 

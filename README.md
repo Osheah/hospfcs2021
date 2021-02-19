@@ -51,3 +51,10 @@ week 4 is found in week04 and contains two labs  namely Lab_4.1 and Lab_4.2
 * evens.py
 * guess1.py
 
+## Week 5
+week 5 is found in week05 and contains the answers for the single lab that week.
+* extra.py contains small code on variable functions
+* func.py contains the answers to the questions on what a function will print out
+* students.py contains a program to enter student first and last name and modules taken with respective grade. It contains an option to view this information 
+* studentsExtra.py is a rejigging of students.py that has choices called from keys in a dict rather than set in a if/elif/else loop
+* test.py was helper code for debugging the doView function on student.py 
