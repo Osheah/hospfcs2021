@@ -60,7 +60,7 @@ week 5 is found in week05 and contains the answers for the single lab that week.
 * test.py was helper code for debugging the doView function on student.py 
 
 ## Week 6
-Week 6 is labs are found in week06 directory. There was one lab in week 6 and it included a continuation of the week 5 lab.
+Week 6 labs are found in week06 directory. There was one lab in week 6 and it included a continuation of the week 5 lab.
 * jsonWriteDict.py contains a program to write a dictonary to file
 * labquiz.py contains the answers to the lab quiz in week 6
 * readsNumber.py contains a program to read a number from a txt file
@@ -70,4 +70,15 @@ Week 6 is labs are found in week06 directory. There was one lab in week 6 and it
 * test-b.txt was code results from exploring lab quiz problems.
 * test-d.txt was code results from exploring lab quiz problems.
 * writeNumber.py is code to write to a text file
+
+## Week 7
+Week 7 lab is found in week07 directory. There was one lab in week 7. The focus was on regex expressions so some of the lab work was to try out  regex in the search box of visual studio code. The files in this directory contain the following
+* access.log - this is from www1 in the tutorial data for splunk which can be dowloaded [here](https://docs.splunk.com/images/Tutorial/tutorialdata.zip)
+* anon.py contains code to mask the last two triplets of an ip address in the sample log file (sampleAccess.log). 
+* anonIP.txt is the output file for the masked ip in anon.py code
+* labquiz.py is the code and answers for the lab quiz in week 7
+* regex.py is code to pull out the date segement from the sampleAccess.log file
+* sampleAccess.log is the first 6 or so entries in the access.log file from splunk [found here](https://docs.splunk.com/images/Tutorial/tutorialdata.zip)
+
+
 
