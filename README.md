@@ -80,5 +80,25 @@ Week 7 lab is found in week07 directory. There was one lab in week 7. The focus 
 * regex.py is code to pull out the date segement from the sampleAccess.log file
 * sampleAccess.log is the first 6 or so entries in the access.log file from splunk [found here](https://docs.splunk.com/images/Tutorial/tutorialdata.zip)
 
+## Week 8
+Week 8 lab is found in week08 directory. There was one lab in week 8. The focus was on plots eg matplotlib. 
+* ages.py contains a program that makes a list called ages that has the same number random value as salaries range 21 to 65 and shows a scatter plot of that data with the salaries. Then add a plot of y = x**2 over it
+* countries.py contains program that has a list of countries (long) that picks five countries. Some countries should appear in the list more than once. Make a pie chart and a barchart
+* extra.py contains program that makes a list called ages that has the same number random value as salaries range 21 to 65 and shows a scatter plot of that data with the salaries. Then add a normal dist plot over it
+* prettier-plot.jpg contains output from ages.py
+* salaries.py contains a program that makes a list called salaries, that has 10is random numbers from 20k to 80k
+* salariesHist.py contains a program that makes a list called salaries, that has 10is random numbers from 20k to 80k and then plots a histogram
+* squaredPlot.py contains a program that plots y = x^2
+
+## Week 9
+Week 9 is found in week09 directory. There was one lab in week 9. The focus was on pandas
+
+* form.py contains a programme to create a data form with data in it
+* grades.csv contains output from form.py
+* grades.xlsx contains output from form.py
+* readLog.py contains read from an access.log file in to a dataframe - assuming the delimiter is ''. The access log is then cleaned and plotted. 
+
+
+
 
 
