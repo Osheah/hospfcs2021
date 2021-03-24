@@ -98,7 +98,8 @@ Week 9 is found in week09 directory. There was one lab in week 9. The focus was 
 * grades.xlsx contains output from form.py
 * readLog.py contains read from an access.log file in to a dataframe - assuming the delimiter is ''. The access log is then cleaned and plotted. 
 
-
+## Week 10
+Week10 is found in week10 directory. The topic is logging. The lab's aim is to create a module that has the fibonacci sequence function i.e. lists the fibonacci sequence of inputed length, with error control that is called from the useFib.py code.  The error controlled module can be found in **myFunctions.py** and the code calling it can be found in **useFib.py**
 
 
 
