@@ -7,11 +7,11 @@ import json # import the json module
 
 fileName = 'dict.json' # name the file
 
-def readDict(): # function to read the file
+def read_dict(): # function to read the file
   with open(fileName) as f : # open the file
       data = json.load(f) # load the dictonary
   return data # return the info in the file  in json format
 
 
-data = readDict() #call the function
+data = read_dict() #call the function
 print(data)     # print the data

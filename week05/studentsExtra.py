@@ -5,7 +5,7 @@
 # 20210218
 
 # function to show the menu - same as students.py
-def showMenu():
+def show_menu():
   print("What would you like to do? \n\
   \t(a) Add new student\n\
   \t(v) View students\n\
@@ -14,17 +14,17 @@ def showMenu():
   return option
 
 # function to add student first name last name  and modules - same as students.py
-def doAdd(students):
+def do_add(students):
   myStudent = {} # initalise the dict
   myStudent['firstname'] = input("Enter your first name: ").strip()
   myStudent['lastname'] = input("Enter your last name: ").strip()
-  myStudent['modules'] =  readModules() # modules are entered via another function and called here
+  myStudent['modules'] =  read_modules() # modules are entered via another function and called here
   students.append(myStudent) # add dict entries to the student list
   #print(type(students))
   return students
 
 # function to add courses and grades - same as students.py
-def readModules():
+def read_modules():
   myCourses = {'course':[], 'grade':[]} # initalise dict with empty list for values for courses and grades
   course = input("Enter the Module name:" ).strip() # get entry for module name
   while course !="":    # do while course is entered i.e. it will stop if no info added
@@ -35,8 +35,8 @@ def readModules():
   return myCourses        
 
 # funtion to view the entries - same as students.py
-def doView(students):
-  print("\n") # leave a gap between this function call and the showMenu function
+def do_view(students):
+  print("\n") # leave a gap between this function call and the show_menu function
   if len(students)<1: # if this is true then there are no entries to show
     print("your student list is empty")
   for index in range(len(students)): # iterate over the number of students added
@@ -52,25 +52,25 @@ def doView(students):
   return students 
 
 # option for q
-def doNothing(dumby):
+def do_nothing(dummy):
   pass
 # option to call various functions depending on input
 choiceMap = {
-  'a': doAdd,
-  'v': doView,
-  'q': doNothing
+  'a': do_add,
+  'v': do_view,
+  'q': do_nothing
   
 }
 # this function is the main function that calls the other functions
 def main():
   students = [] # initalise student list
-  option = showMenu() # show the menu and sets the option
+  option = show_menu() # show the menu and sets the option
   while(option != 'q'): # while q has not been selected 
     if option in choiceMap: # look at the choiceMap and select function based on input 
       choiceMap[option](students)
     else: # catch for a non valid entry
       print("\n\nplease select either a,v or q")
-    option=showMenu() # show the menu again for more choices if q is not selected
+    option=show_menu() # show the menu again for more choices if q is not selected
 
 # this calls the main function
 if __name__ == "__main__":

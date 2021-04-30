@@ -4,11 +4,11 @@
 
 fileName = 'count.txt' # file location
 # function to write a number
-def writeNumber(): 
+def write_number(): 
   with open(fileName, 'wt') as f: # open the file for writing text
     num =input("enter a number: ") # enter a number
     int(f.write(num)) # convert the string number to an integer
     return num  # return the integer
 
-print(writeNumber())   # call the function
+print(write_number())   # call the function
 

@@ -4,10 +4,10 @@
 
 fileName = 'count.txt' # location of the file
 
-def readNumber(): # function to read in the text
+def read_number(): # function to read in the text
   with open(fileName) as f:
     num = int(f.read()) # convert the number string to an integer
     return num  # return the integer
 
-print(readNumber())   # call and print the function
+print(read_number())   # call and print the function
 
