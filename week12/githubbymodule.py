@@ -8,3 +8,4 @@ from conf import auth
 token = auth['token']
 
 g=Github(token)
+print(g, token)
