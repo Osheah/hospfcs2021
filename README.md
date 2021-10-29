@@ -1,5 +1,6 @@
 # pfcs-labs
 # Lab work for programming for Cybersecurity
+The following are found in semester1 folder
 
 ## Week 1
 The task was to push a test file to git hub which can be foudn in test.txt
@@ -100,6 +101,18 @@ Week 9 is found in week09 directory. There was one lab in week 9. The focus was 
 
 ## Week 10
 Week10 is found in week10 directory. The topic is logging. The lab's aim is to create a module that has the fibonacci sequence function i.e. lists the fibonacci sequence of inputed length, with error control that is called from the useFib.py code.  The error controlled module can be found in **myFunctions.py** and the code calling it can be found in **useFib.py**
+
+## Week 11
+
+## Week 12
+
+The following are found in semester2 folder
+# week0
+# week1
+# week2
+# week3
+# week4
+
 
 
 
