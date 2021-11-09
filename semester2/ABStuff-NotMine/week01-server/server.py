@@ -38,7 +38,7 @@ def create():
     }
     return jsonify(bookDao.create(book))
 
-    return "served by Create "
+    #return "served by Create "
 
 #update
 # curl -X PUT -i -H "Content-Type:application/json" -d "{\"Title\":\"new Title\", \"Price\":999}" -H "content-type:application/json" http://127.0.0.1:5000/books/1

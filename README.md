@@ -107,12 +107,54 @@ Week10 is found in week10 directory. The topic is logging. The lab's aim is to c
 ## Week 12
 
 The following are found in semester2 folder
+# ABStuff-NotMine
+This is not my material and I will remove it later. It is class material which is  here for handiness sake.
 # week0
 # week1
+This contains programmes to run a flask server and connect to a database. 
+it contains
+* createDb.py - this is code to create a database table in mysql
+* createTable.py - this is code to create a database table in mysql
+* insertinto.py This is code to insert entries into a mysql databse 
+* requirements.txt - this is a list of requirments for the venv enviroment
+* rest_server.py - this is the flask server
+# week1hos
+This is a redo of week1 to tease out issues it contains the following
+* static - folder for static pages
+* static_pages other folder for static pages
+* templates - folder to store html templates for the flask rest server
+* venv - this is not uploaded to github its the virtual enviroment
+* .gitignore - ignore file to ignore the virtual enviroment venv
+* connect.py - connects the server to a database
+* dao.py - this is where curl abilities can be performed on the database 
+* requirements.txt - the requirements for the virtual enviroment venv
+* rest_server.py flask server
+* server.py also flask server
 # week2
+* dao.py - this is where curl abilities can be performed on the database 
+* staticpages other folder for static pages
+* templates - folder to store html templates for the flask rest server
+* vul_hos - an attempt at codign a vulnerability sql injection - not done
+* BookDao.py book database object for connecting server input to the database
+* server1-improper-inputs.py - AB's code for improper inputs to illustrate CWE
+* testinegerwraper.py 
+
 # week3
+* echo-client.py - simple socket client
+* echo-server.py - simple socket server
+* multiconn-client.py - multiple socket client
+* multiconn-server.py - multiple socket server
 # week4
+* scanip.py programme to scan for open ports
 
 
+
+# site
+This folder contains simplified code from week 2 on CWE
+* staticpages other folder for static pages
+* templates - folder to store html templates for the flask rest server
+* dao.py book database object for connecting server input to the database
+* db.sql - sql commands to run in mysql
+* server.py restful flask server
 
 

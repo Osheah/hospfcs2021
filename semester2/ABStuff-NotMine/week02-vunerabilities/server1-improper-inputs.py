@@ -12,7 +12,7 @@ def home():
     return 'welcome ' + session['username'] +\
         '<br><a href="'+url_for('logout')+'">logout</a>'
 
-
+c
 @app.route('/books')
 def getAll():
     return jsonify(bookDao.getAll())
